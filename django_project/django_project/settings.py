@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-# import smtplib
+import smtplib
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -42,9 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
     'storages'
->>>>>>> f7abb08b6b45331c795a8104347d1ab66d60cbd8
 ]
 
 MIDDLEWARE = [
@@ -146,10 +144,7 @@ EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = os.environ.get('AWS_STORAGE_BUCKET_NAME')
-<<<<<<< HEAD
 AWS_S3_REGION_NAME = 'eu-north-1'  # e.g. us-east-2
-=======
->>>>>>> f7abb08b6b45331c795a8104347d1ab66d60cbd8
 
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
